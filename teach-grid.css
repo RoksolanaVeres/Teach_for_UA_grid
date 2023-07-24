@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(./images/technology-background.png);
+  background-size: cover;
+  height: 574px;
+  padding: 150px 50px 0px 15%;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+header h1 {
+  font-size: 38px;
+  line-height: 42px;
+  max-width: 450px;
+}
+
+header h2 {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.9;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  border-right: 1px solid lightgray;
+  padding: 50px 0 127px 50px;
+  position: relative;
+}
+
+.card:nth-of-type(2),
+.card:nth-of-type(4) {
+  border: none;
+}
+
+.card:nth-of-type(2) {
+  background: rgba(5, 54, 252, 1);
+}
+
+.card:nth-of-type(2) .number {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.card:nth-of-type(2) .label {
+  color: #ffffff;
+}
+
+.card:nth-of-type(2) .details {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+h2.number,
+h2.label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+h2.number {
+  font-weight: 300;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+h2.label {
+  margin-bottom: 70px;
+}
+
+p.details {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+  margin: 0px 20px 20px 0px;
+}
+
+.image-container {
+  background: white;
+  width: 100px;
+  height: 100px;
+  padding: 35px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.card:nth-of-type(2) .image-container {
+  right: -3px;
+}
+
+.text-container {
+  width: 64%;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 980px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 19px 0px 60px 20px;
+    border: 1px solid lightgray;
+  }
+
+  .text-container {
+    width: 90%;
+  }
+
+  h2.label {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+
+  p.details {
+    font-size: 20px;
+  }
+
+  .image-container {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+}
